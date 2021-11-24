@@ -1,0 +1,69 @@
+main{
+	max-width: 900px;
+	margin: auto;
+}
+section{
+	height: 90vh;
+}
+
+
+#cabecalho{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50vh 30vh;
+    grid-template-areas: "h h" "i t";
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.centro {
+    height: 10em;
+    position: relative;
+}
+
+.centro h1 {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+}
+.centro h2 {
+    margin: 0;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+}
+
+h1{
+    font-size: 5rem;
+}
+#bloco1{
+    background-image: url("imagens/cabecalho-principal.png");
+    background-size: 100% 100%;
+    grid-area: h;
+}
+
+#bloco2{
+    background-color: green;
+    grid-area: i;
+}
+#bloco3{
+    background-color: purple;
+    grid-area: t;
+}
+#sanduiches{
+    background-color:pink;
+}
+#bebidas{
+    background-color: blue;
+}
+#porcoes{
+    background-color: blueviolet;
+}
