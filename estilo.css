@@ -6,7 +6,6 @@ section{
 	height: 90vh;
 }
 
-
 #cabecalho{
     height: 80vh;
     display: grid;
@@ -14,12 +13,16 @@ section{
     grid-template-rows: 50vh 30vh;
     grid-template-areas: "h h" "i t";
 }
-img{
-    width: 100%;
-    height: 100%;
+
+#bloco1{
+    border-radius: 0 0 20px 20px;
+    background-image: url("imagens/cabecalho-principal.png");
+    background-size: 100% 100%;
+    grid-area: h;
 }
 
-.centro {
+.centro {/*Aqui estava dando problema no nav, precisava de um margin top*/
+    margin-top: 160px;
     height: 10em;
     position: relative;
 }
@@ -27,7 +30,6 @@ img{
 .centro h1 {
     margin: 0;
     position: absolute;
-    top: 100%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -35,7 +37,7 @@ img{
 .centro h2 {
     margin: 0;
     position: absolute;
-    top: 150%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -44,19 +46,46 @@ img{
 h1{
     font-size: 5rem;
 }
-#bloco1{
-    background-image: url("imagens/cabecalho-principal.png");
-    background-size: 100% 100%;
-    grid-area: h;
-}
 
 #bloco2{
-    background-color: green;
+    background-color: blueviolet;
     grid-area: i;
 }
 #bloco3{
-    background-color: purple;
     grid-area: t;
+}
+/*
+#bloco3 table{
+    text-align: center;
+    font-size: 20px;
+}
+
+#bloco3 table img{
+    height: 15px;
+    width: 15px;
+}
+#img-pagamento{
+    height: 50px;
+    width: 50px;
+}
+*/
+#bloco3-s1{
+    height: 30vh;
+    width: 20em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+#bloco3-s1 div{
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#bloco3-s1 div img{
+    height: 30px;
+    width: 30px;
 }
 #sanduiches{
     background-color:pink;
@@ -66,4 +95,9 @@ h1{
 }
 #porcoes{
     background-color: blueviolet;
+}
+
+footer{
+    height: 10vh;
+    background-color: red;
 }
